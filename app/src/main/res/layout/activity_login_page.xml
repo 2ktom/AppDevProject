@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".LoginPage">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/UnBox"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-175dp"
+        android:fontFamily="@font/dream_school"
+        android:paddingLeft="78dp"
+        android:text="Log-In"
+        android:textColor="@color/white"
+        android:textSize="65dp" />
+
+    <EditText
+        android:id="@+id/UnBox"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="265dp"
+        android:background="@drawable/text_bg"
+        android:hint="  Username"
+        android:paddingLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/PassBox"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/UnBox"
+        android:background="@drawable/text_bg"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:hint="  Password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PassBox"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:text="Forgot password?"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PassBox"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/buttonedge"
+        android:text="Log In"/>
+
+    <TextView
+        android:id="@+id/orTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:text="or"
+        android:layout_below="@+id/loginBtn"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createaccBtn"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/orTxt"
+        android:layout_marginTop="15dp"
+        android:text="Create Account"
+        android:background="@drawable/darkblue_btn"/>
+
+</RelativeLayout>

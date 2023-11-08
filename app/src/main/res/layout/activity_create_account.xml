@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".CreateAccount">
+
+    <TextView
+        android:id="@+id/step1_Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="53dp"
+        android:text="Step 1 of 2"
+        android:textColor="#F6F4EB"
+        android:fontFamily="@font/interphases_pro_trial_med"
+        android:textSize="16dp"/>
+    
+    <TextView
+        android:id="@+id/signupTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="45dp"
+        android:textColor="#F6F4EB"
+        android:text="Sign-up"
+        android:textSize="65dp"
+        android:fontFamily="@font/dream_school"/>
+
+    <EditText
+        android:id="@+id/UserName_SignUp"
+        android:layout_width="340dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/signupTxt"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="33dp"
+        android:background="@drawable/text_bg"
+        android:fontFamily="@font/interphases_pro_trial_med"
+        android:hint="Username"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/Pass_SignUp"
+        android:layout_width="340dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/UserName_SignUp"
+        android:background="@drawable/text_bg"
+        android:hint="Password"
+        android:layout_centerInParent="true"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="33dp"
+        android:fontFamily="@font/interphases_pro_trial_med"/>
+
+    <EditText
+        android:id="@+id/ConfirmPass"
+        android:layout_width="340dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/Pass_SignUp"
+        android:background="@drawable/text_bg"
+        android:hint="Confirm Password"
+        android:layout_centerInParent="true"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="33dp"
+        android:fontFamily="@font/interphases_pro_trial_med"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_SignUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/ConfirmPass"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/buttonedge"
+        android:text="Next" />
+
+</RelativeLayout>

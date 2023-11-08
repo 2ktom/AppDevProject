@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount2">
+
+    <TextView
+        android:id="@+id/step2_Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="53dp"
+        android:text="Step 2 of 2"
+        android:textColor="#F6F4EB"
+        android:fontFamily="@font/interphases_pro_trial_med"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/signupTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="45dp"
+        android:textColor="#F6F4EB"
+        android:text="Sign-up"
+        android:textSize="65dp"
+        android:fontFamily="@font/dream_school"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dropdown_menu"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/question"
+        android:layout_below="@id/signupTxt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/choose_question_bg"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="33dp"
+        android:background="@drawable/text_bg"
+        android:fontFamily="@font/interphases_pro_trial_med"
+        android:hint="Type your answer here"
+        android:paddingLeft="20dp" />
+
+
+</RelativeLayout>
