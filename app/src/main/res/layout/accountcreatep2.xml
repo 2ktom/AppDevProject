@@ -5,18 +5,18 @@
     android:background="@drawable/gradient_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateAccount2">
+    tools:context=".CreatePage2">
 
     <TextView
         android:id="@+id/step2_Txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="105dp"
-        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp"
         android:text="Step 2 of 2"
         android:textColor="#F6F4EB"
         android:fontFamily="@font/interphases_pro_trial_med"
-        android:textSize="16dp"/>
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/signupTxt"
@@ -29,7 +29,7 @@
         android:textSize="65dp"
         android:fontFamily="@font/dream_school"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/dropdown_menu"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
@@ -53,11 +53,31 @@
         android:layout_width="340dp"
         android:layout_height="48dp"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
         android:background="@drawable/text_bg"
         android:fontFamily="@font/interphases_pro_trial_med"
         android:hint="Type your answer here"
-        android:paddingLeft="20dp" />
+        android:paddingStart="20dp" />
+
+ <!--   <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/signupTxt"
+        android:layout_marginTop="50dp"
+
+        /> -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/FinishBtn"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:text="Finish Sign Up"
+        android:layout_below="@id/answer"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/buttonedge"
+        />
 
 
 </RelativeLayout>

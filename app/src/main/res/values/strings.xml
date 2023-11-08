@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">AppdevProjext</string>
     <string name="question">Choose a question</string>
+    <string-array name="SecurityQuestions">
+        <item>What is the name of your pet?</item>
+        <item>What is the name of your pet?</item>
+        <item>What is the name of your pet?</item>
+        <item>What is the name of your pet?</item>
+
+    </string-array>
 </resources>

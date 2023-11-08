@@ -7,20 +7,9 @@
     android:background="@drawable/gradient_bg"
     tools:context=".LoginPage">
 
-    <TextView
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_below="@+id/UnBox"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="-175dp"
-        android:fontFamily="@font/dream_school"
-        android:paddingLeft="78dp"
-        android:text="Log-In"
-        android:textColor="@color/white"
-        android:textSize="65dp" />
 
     <EditText
-        android:id="@+id/UnBox"
+        android:id="@+id/userTxt"
         android:layout_width="300dp"
         android:layout_height="47dp"
         android:layout_centerHorizontal="true"
@@ -30,22 +19,36 @@
         android:paddingLeft="15dp"/>
 
     <EditText
-        android:id="@+id/PassBox"
+        android:id="@+id/pwTxt"
         android:layout_width="300dp"
         android:layout_height="47dp"
         android:layout_centerInParent="true"
-        android:layout_below="@+id/UnBox"
+        android:layout_below="@+id/userTxt"
         android:background="@drawable/text_bg"
         android:layout_marginTop="20dp"
         android:paddingLeft="15dp"
         android:hint="  Password" />
 
     <TextView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/userTxt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-175dp"
+        android:fontFamily="@font/dream_school"
+        android:paddingLeft="78dp"
+        android:text="Log-In"
+        android:textColor="@color/white"
+        android:textSize="65dp" />
+
+
+    <TextView
+        android:id="@+id/forgotPw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/PassBox"
+        android:layout_below="@+id/pwTxt"
         android:layout_centerInParent="true"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="15dp"
         android:text="Forgot password?"
         android:textColor="@color/white" />
 
@@ -53,11 +56,11 @@
         android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/PassBox"
+        android:layout_below="@+id/forgotPw"
         android:layout_centerInParent="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/buttonedge"
-        android:text="Log In"/>
+        android:text="Log In" />
 
     <TextView
         android:id="@+id/orTxt"
@@ -73,10 +76,10 @@
         android:id="@+id/createaccBtn"
         android:layout_width="150dp"
         android:layout_height="48dp"
-        android:layout_centerInParent="true"
         android:layout_below="@+id/orTxt"
-        android:layout_marginTop="15dp"
-        android:text="Create Account"
-        android:background="@drawable/darkblue_btn"/>
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/darkblue_btn"
+        android:text="Create Account" />
 
 </RelativeLayout>
