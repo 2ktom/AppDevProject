@@ -13,7 +13,7 @@ public class LoginPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_page);
+        setContentView(R.layout.loginpage);
 
         button1 = (Button) findViewById(R.id.loginBtn);
         button1.setOnClickListener(new View.OnClickListener() {
